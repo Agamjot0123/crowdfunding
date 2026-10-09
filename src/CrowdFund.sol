@@ -18,9 +18,9 @@ contract ThankYouNFT is ERC721 {
 }
 
 contract CrowdFund is Ownable {
-    uint256 public immutable i_goal;        // funding goal in wei
-    uint256 public immutable i_deadline;    // block.timestamp of deadline
-    address public immutable i_nft;         // ThankYouNFT address
+    uint256 public immutable i_goal; // funding goal in wei
+    uint256 public immutable i_deadline; // block.timestamp of deadline
+    address public immutable i_nft; // ThankYouNFT address
     mapping(address => uint256) public s_amountFunded;
 
     event Funded(address indexed funder, uint256 amount);
